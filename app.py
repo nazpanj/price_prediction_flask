@@ -3,9 +3,15 @@ import pickle
 import logging
 import os
 
-# paths
-in_file = "models/linear_model/linear_model.pkl"  #model file
-log_file = "logs/app.log"
+# dir paths
+base_dir = os.getcwd()
+models_dir = os.path.join(base_dir, 'models', 'linear_model')
+logs_dir = os.path.join(base_dir, 'logs')
+
+# file paths
+in_file = os.path.join(models_dir, 'linear_model.pkl') #model
+log_file = os.path.join(logs_dir, 'app.log') #logs
+
 
 # configure logs
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s: %(message)s', filename=log_file, filemode='a')

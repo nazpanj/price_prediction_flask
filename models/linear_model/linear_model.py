@@ -6,10 +6,18 @@ import logging
 import os
 
 
-# paths
-in_file = "datasets/prices.csv" #dataset
-out_file = "models/linear_model/linear_model.pkl" #model
-log_file = "logs/app.log"
+# dir paths
+script_dir = os.path.dirname(os.path.abspath(__file__))
+base_dir = os.path.abspath(os.path.join(script_dir, '..', '..'))
+datasets_dir = os.path.join(base_dir, 'datasets')
+logs_dir = os.path.join(base_dir, 'logs')
+
+
+#file paths
+in_file = os.path.join(datasets_dir, 'dataset.csv') #dataset file
+out_file = os.path.join(script_dir, 'linear_model.pkl') # model
+log_file = os.path.join(logs_dir, 'app.log') # logs
+
 
 # configure logs
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s: %(message)s', filename=log_file, filemode='a')
