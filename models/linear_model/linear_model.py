@@ -14,7 +14,7 @@ logs_dir = os.path.join(base_dir, 'logs')
 
 
 #file paths
-in_file = os.path.join(datasets_dir, 'dataset.csv') #dataset file
+in_file = os.path.join(datasets_dir, 'prices.csv') #dataset file
 out_file = os.path.join(script_dir, 'linear_model.pkl') # model
 log_file = os.path.join(logs_dir, 'app.log') # logs
 
