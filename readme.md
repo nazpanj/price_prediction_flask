@@ -38,21 +38,26 @@ conda create --name your_env_name --file requirements.txt
 conda activate your-env-name
 ```
 
-5. Navigate to models/linear_model, run .py file:
+5. Navigate to dir:
+```bash
+cd models/linear_model
+```
+
+6. Run the file:
 ```bash
 python linear_model.py
 ```
-- this will train the model using the `datasets/price.csv`
-- the trained model will be saved as `models/linear_model/linear_model.pkl`
+* this will train the model using the `datasets/price.csv`
+* the trained model will be saved as `models/linear_model/linear_model.pkl`
 
-6. Run the application
+7. Run the application
 ```bash
 python app.py
 ```
 
-6. The above command will start your Flask application and it will be accessible at:  `http://localhost:5000`
+8. The above command will start your Flask application and it will be accessible at:  `http://localhost:5000`
 
-7. Use the web interface:
+9. Use the web interface:
 - Enter the number of rooms
 - Enter the distance
 - Click on Predict Value button to get the predicted value
