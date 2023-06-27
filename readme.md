@@ -50,7 +50,7 @@ python linear_model.py
 * this will train the model using the `datasets/price.csv`
 * the trained model will be saved as `models/linear_model/linear_model.pkl`
 
-7. Run the application
+7. Navigate to project dir and run the application
 ```bash
 python app.py
 ```
